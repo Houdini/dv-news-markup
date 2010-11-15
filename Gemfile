@@ -5,10 +5,14 @@ gem 'rails', '3.0.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'haml', '>= 3.0.22'
-gem 'compass', '0.10.6', :require => false
-gem 'compass-colors', :require => false
-gem 'fancy-buttons', :require => false
-gem 'sass'
+
+group :development do
+  gem 'compass', '0.10.6', :require => false
+  gem 'compass-colors', :require => false
+  gem 'fancy-buttons', :require => false
+  gem 'sass'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
