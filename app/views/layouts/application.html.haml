@@ -1,0 +1,93 @@
+!!!Strict
+%html
+  %header
+    = stylesheet_link_tag 'compiled/application.css'
+  %body
+    .content
+      .top
+        %h1.logo
+          %a(href="/")
+            DV-NEWS
+        .date
+          12 ноября 2010
+        .search
+          %form
+            %input(value="Поиск")
+        = render 'shared/menu'
+      .green-line
+      .sub-menu-bg
+        .menu-background
+        .white-line
+      #main
+        #content
+          .hot-news-container
+            .hot-news
+              .news-title
+                Новость часа
+              .new-text
+                Экс-глава компании в Приморье осужден на 6 лет условно за хищение зарплаты сотрудников
+
+          .top-news
+
+        #sidebar
+          .gray-line
+          .sidebar-container
+            .block
+              .title
+                Курсы валют
+              .content
+                %ul.indicator-list
+                  %li.minus
+                    %span.name
+                      Доллар США
+                    %span.price
+                      30.7709
+                    %span.abs_relative
+                      (-0.0232)
+                  %li.plus
+                    %span.name
+                      Евро
+                    %span.price
+                      43.1654
+                    %span.abs_relative
+                      (+0.2507)
+            .block
+              .title
+                Видео
+            .block
+              .title
+                Интервью
+            .block
+              .title
+                Фоторепортаж
+            .block
+              .title
+                Самое популярное
+            .block
+              .title
+                Блогии
+            .block
+              .title
+                Обзор прессы
+            .block
+              .title
+                10 чудес Дальнего Востока
+      #footer
+        %ul.menu
+          %li
+            %a(href="")
+              О компании
+          %li
+            %a(href="")
+              Продукты и услуги
+          %li
+            %a(href="")
+              Контакты
+          %li
+            %a(href="")
+              Партнеры
+          %li
+            %a(href="")
+              RSS
+        .copyright
+          Copyright 2010 «DV-News» все права защищены

@@ -1,0 +1,236 @@
+@import blueprint/reset.sass
+$total_width = 1004px
+$sidebar_width = 735px
+$global_left_padding = 20px
+html, body
+  height: 100%
+  background-color: #fdfdfd
+body
+  background: url(/images/bg_gradient.png) repeat-x
+  min-width: $total_width
+  font-family: Verdana, sans-serif
+  .content
+    width: $total_width
+    margin: 0 auto
+    position: relative
+    .top
+      background: url(/images/top_bg.png) no-repeat
+      height: 100px
+      display: block
+      width: 100%
+      color: white
+      .logo
+        position: absolute
+        overflow: hidden
+        text-indent: -9999px
+        background: url(/images/logo.png) no-repeat
+        z-index: 10
+        width: 180px
+        height: 35px
+        top: 28px
+        margin-left: 26px
+        a
+          display: block
+          height: 35px
+      .date
+        text-align: right
+        padding-top: 35px
+        padding-right: 100px
+        font-family: Georgia, serif
+        font-size: 14px
+      .search
+        position: absolute
+        top: 72px
+        right: 38px
+        background: url(/images/search.png)
+        overflow: hidden
+        display: block
+        height: 19px
+        width: 158px
+        input
+          background: transparent
+          border: none
+          outline-color: white
+          font-size: 12px
+          margin-left: 24px
+          font-family: Verdana, sans-serif
+          width: 158px - 24px - 10px
+        
+        
+    .green-line
+      background-color: #397e06
+      width: 100%
+      height: 1px
+      display: block
+
+    .menu-background
+      background-color: #aeb0b1  
+      width: 100%
+      height: 18px
+      display: block
+
+    .white-line
+      background-color: #edeeee
+      width: 100%
+      height: 1px
+      display: block
+    .sub-menu-bg
+//      display: none
+
+
+#nav
+  list-style: none
+  font-family: Verdana, sans-serif
+  font-size: 13px
+  color: white
+  padding-top: 25px
+  padding-left: 26px
+  li.active
+    border-bottom: #88b55f solid 2px
+  li:hover
+    border-bottom: #88b55f solid 2px
+  li
+    float: left
+    display: inline
+    margin-right: 10px
+    a
+      float: left
+      text-decoration: none
+      color: white
+  ul
+    position: absolute
+    top: 103px
+    left: 26px
+    list-style: none
+    overfloat: hidden
+    li.selected
+      color: #3d3e3e
+    li:hover
+      color: #3d3e3e
+      border: none
+    li
+      a
+        color: inherit
+        font-size: 11px
+
+#main
+  overflow: hidden
+  background-color: #fff
+  padding-bottom: 10px
+  #content
+    width: $sidebar_width
+    float: left
+
+  #sidebar
+    width: $total_width - $sidebar_width 
+    float: right
+    background-color: #fff
+    .gray-line
+      
+      width: $total_width - $sidebar_width - 1px
+      height: 9px
+      background-color: #e4e5e6
+#footer
+  background-color: #737b7c
+  height: 30px
+  position: relative
+  font-family: Verdana, sans-serif
+  font-size: 11px
+  .menu
+    position: relative
+    list-style: none outside none
+    padding-left: $global_left_padding
+    padding-top: 7px
+    li
+      float: left
+      display: inline
+      margin-right: 13px
+      a
+        color: white
+        text-decoration: none
+      a:hover
+        text-decoration: underline
+  .copyright
+    position: absolute
+    top: 7px
+    text-align: right
+    color: #bebebe
+    right: $total_width - $sidebar_width
+
+    
+
+.hot-news-container
+  background-color: #e4e5e6
+  padding-left: $global_left_padding
+  padding-top: 9px
+  .hot-news
+    display: block
+    width: 710px
+    height: 29px
+    background: url(/images/hot_news.png)
+    position: relative
+    .news-title
+      font-size: 10px
+      color: white
+      padding-top: 7px
+      padding-left: 5px
+    .new-text
+      color: #303030
+      position: absolute
+      top: 7px
+      font-size: 12px
+      left: 90px
+
+.top-news
+  background-color: #e4e5e6
+  padding-left: $global_left_padding
+  padding-top: 9px
+
+
+.sidebar-container
+  padding-left: 8px
+  padding-right: $global_left_padding
+
+  .block
+    .title
+      font-family: Georgia
+      font-style: italic
+      font-weight: bold
+      font-size: 12.6px
+      color: #5e6465
+      padding-left: 11px
+      margin-top: 10px
+    .content
+      background-color: #f4f4f4
+      border-top: 1px solid #dfdfdf
+      font-size: 12px
+      color: #666
+      width: $total_width - $sidebar_width - 8px - $global_left_padding
+      padding-top: 5px
+      margin-top: 5px
+
+      .indicator-list
+        list-style: none outside none
+        position: relative
+        padding-bottom: 1px
+        li
+          margin-bottom: 10px
+        .name
+          margin-left: 11px
+        .price
+          position: absolute
+          left: 100px
+          padding-right: 10px
+        .abs_relative
+          float:right
+          position: absolute
+          right: 1px
+        .minus
+          .price
+            color: #e10000
+            background: url(/images/minus.gif) no-repeat scroll 100% 0 transparent
+        .plus
+          .price
+            color: #65ab00
+            background: url(/images/plus.gif) no-repeat scroll 100% 2px transparent
+          
