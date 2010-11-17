@@ -5,6 +5,10 @@ $(function(){
     $('dl.top-news li').mouseover(function(){
         $(this).siblings().removeClass('active').end().addClass('active');
     });
+
+    $('div.news-container dl dt').click(function(){
+        $(this).siblings().removeClass('active').end().next('dd').andSelf().addClass('active');
+    });
 });
 function hideFormText() {
 	var _inputs = document.getElementsByTagName('input');
