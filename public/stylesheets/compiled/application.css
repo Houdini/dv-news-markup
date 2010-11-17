@@ -290,13 +290,13 @@ body .content .white-line {
   right: 269px;
 }
 
-/* line 162, ../../../app/stylesheets/application.sass */
+/* line 160, ../../../app/stylesheets/application.sass */
 .hot-news-container {
   background-color: #e4e5e6;
   padding-left: 20px;
   padding-top: 9px;
 }
-/* line 166, ../../../app/stylesheets/application.sass */
+/* line 164, ../../../app/stylesheets/application.sass */
 .hot-news-container .hot-news {
   display: block;
   width: 710px;
@@ -304,35 +304,191 @@ body .content .white-line {
   background: url(/images/hot_news.png);
   position: relative;
 }
-/* line 172, ../../../app/stylesheets/application.sass */
+/* line 170, ../../../app/stylesheets/application.sass */
 .hot-news-container .hot-news .news-title {
   font-size: 10px;
   color: white;
   padding-top: 7px;
   padding-left: 5px;
 }
-/* line 177, ../../../app/stylesheets/application.sass */
-.hot-news-container .hot-news .new-text {
+/* line 175, ../../../app/stylesheets/application.sass */
+.hot-news-container .hot-news h1 {
   color: #303030;
   position: absolute;
   top: 7px;
   font-size: 12px;
   left: 90px;
 }
-
+/* line 181, ../../../app/stylesheets/application.sass */
+.hot-news-container .hot-news h1 a {
+  color: inherit;
+  text-decoration: none;
+}
 /* line 184, ../../../app/stylesheets/application.sass */
-.top-news {
+.hot-news-container .hot-news h1 a:hover {
+  text-decoration: underline;
+}
+
+/* line 187, ../../../app/stylesheets/application.sass */
+dl.top-news {
   background-color: #e4e5e6;
   padding-left: 20px;
   padding-top: 9px;
+  height: 20px;
+  font-size: 13px;
+  font-family: Verdana, serif;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 197, ../../../app/stylesheets/application.sass */
+dl.top-news dt {
+  position: relative;
+  cursor: pointer;
+  background-color: #f8f8f9;
+  float: left;
+  height: 100%;
+  padding-left: 6px;
+  color: 4e 4e 4e;
+}
+/* line 205, ../../../app/stylesheets/application.sass */
+dl.top-news dt .end {
+  width: 6px;
+  height: 20px;
+  display: inline-block;
+  background-color: #f8f8f9;
+  float: right;
+}
+/* line 213, ../../../app/stylesheets/application.sass */
+dl.top-news .last .end {
+  background: url(/images/top_news_menu.png) scroll no-repeat;
+  background-color: #e4e5e6 !important;
+}
+/* line 217, ../../../app/stylesheets/application.sass */
+dl.top-news .active {
+  background-color: #6fb111;
+  color: #f8f8f9;
+}
+/* line 220, ../../../app/stylesheets/application.sass */
+dl.top-news .active .end {
+  background: url(/images/top_news_menu_active.png) scroll no-repeat;
+  background-color: #f8f8f9;
+}
+/* line 223, ../../../app/stylesheets/application.sass */
+dl.top-news .active td {
+  font-weight: bold;
+}
+/* line 225, ../../../app/stylesheets/application.sass */
+dl.top-news dd {
+  float: right;
+  position: relative;
+  margin: 20px 0 0 -100%;
+  width: 100%;
+  display: none;
+}
+/* line 231, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content {
+  background-color: #c2c2c2;
+  width: 100%;
+  height: 232px;
+}
+/* line 235, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content img {
+  margin-top: 5px;
+  margin-left: 6px;
+  float: left;
+}
+/* line 239, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content ul {
+  list-style: none;
+  width: 380px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 15px;
+  height: 222px;
+  position: relative;
+}
+/* line 247, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content ul li {
+  background-color: white;
+  margin-bottom: 1px;
+  width: 390px;
+  height: 73px;
+}
+/* line 252, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content ul li img {
+  position: absolute;
+  left: -320px;
+  top: -5px;
+  display: none;
+}
+/* line 257, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content ul li * {
+  margin-left: 5px;
+}
+/* line 259, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content ul li h2 {
+  color: #4e4e4e;
+  font-size: 13px;
+  font-family: Georgia, sans-serif;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+/* line 265, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content ul li h2 a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 270, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content ul li h2 a nobr {
+  margin: 0;
+}
+/* line 272, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content ul li h2 a:hover {
+  text-decoration: underline;
+}
+/* line 274, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content ul li .time {
+  color: #a8a8a8;
+  font-size: 17px;
+}
+/* line 277, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content ul li .lead {
+  font-size: 10px;
+  font-family: Verdana;
+  color: #4e4e4e;
+}
+/* line 282, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content ul li.active img {
+  display: block;
+}
+/* line 285, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content ul li.active h2, dl.top-news dd .content ul li:hover h2 {
+  color: #528c00;
+}
+/* line 287, ../../../app/stylesheets/application.sass */
+dl.top-news dd .content ul li.last {
+  margin-bottom: 0;
+  height: 74px;
+}
+/* line 290, ../../../app/stylesheets/application.sass */
+dl.top-news dd.active {
+  display: block;
 }
 
-/* line 190, ../../../app/stylesheets/application.sass */
+/* line 292, ../../../app/stylesheets/application.sass */
+.hidden {
+  display: none;
+}
+
+/* line 297, ../../../app/stylesheets/application.sass */
 .sidebar-container {
   padding-left: 8px;
   padding-right: 20px;
 }
-/* line 195, ../../../app/stylesheets/application.sass */
+/* line 302, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .title {
   font-family: Georgia;
   font-style: italic;
@@ -342,7 +498,7 @@ body .content .white-line {
   padding-left: 11px;
   margin-top: 10px;
 }
-/* line 203, ../../../app/stylesheets/application.sass */
+/* line 310, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content {
   background-color: #f4f4f4;
   border-top: 1px solid #dfdfdf;
@@ -352,38 +508,43 @@ body .content .white-line {
   padding-top: 5px;
   margin-top: 5px;
 }
-/* line 212, ../../../app/stylesheets/application.sass */
+/* line 319, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content .indicator-list {
   list-style: none outside none;
   position: relative;
   padding-bottom: 1px;
 }
-/* line 216, ../../../app/stylesheets/application.sass */
+/* line 323, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content .indicator-list li {
   margin-bottom: 10px;
 }
-/* line 218, ../../../app/stylesheets/application.sass */
+/* line 325, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content .indicator-list .name {
   margin-left: 11px;
 }
-/* line 220, ../../../app/stylesheets/application.sass */
+/* line 327, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content .indicator-list .price {
   position: absolute;
   left: 100px;
   padding-right: 10px;
 }
-/* line 224, ../../../app/stylesheets/application.sass */
+/* line 331, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content .indicator-list .abs_relative {
   position: absolute;
   right: 1px;
 }
-/* line 229, ../../../app/stylesheets/application.sass */
+/* line 336, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content .indicator-list .minus .price {
   color: #e10000;
   background: url(/images/minus.gif) no-repeat scroll 100% 0 transparent;
 }
-/* line 233, ../../../app/stylesheets/application.sass */
+/* line 340, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content .indicator-list .plus .price {
   color: #65ab00;
   background: url(/images/plus.gif) no-repeat scroll 100% 2px transparent;
+}
+
+/* line 343, ../../../app/stylesheets/application.sass */
+.clear {
+  clear: both;
 }

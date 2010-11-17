@@ -24,11 +24,90 @@
             .hot-news
               .news-title
                 Новость часа
-              .new-text
-                Экс-глава компании в Приморье осужден на 6 лет условно за хищение зарплаты сотрудников
-
-          .top-news
-
+              %h1
+                %a(href="")
+                  Экс-глава компании в Приморье осужден на 6 лет условно за хищение зарплаты сотрудников
+          %dl.top-news
+            %dt.active
+              %table
+                %tr
+                  %td
+                    Россия и мир
+                  %td
+                    .end
+            %dd.active
+              .content
+                %ul
+                  %li.active
+                    %img(src="/images/top_news_image1.jpg" width="309" height="222")
+                    .time
+                      15:45
+                    %h2
+                      %a(href="")
+                        %nobr
+                          В России препочитают самые дорогие модели iPad
+                    .lead
+                      Phasellus in enim. In sollicitudin nibh ac nulla
+                  %li
+                    %img.hidden(src="/images/top_news_image2.jpg" width="309" height="222")
+                    .time
+                      14:32
+                    %h2
+                      %a(href="")
+                        %nobr
+                          Дмитрий Медведев вручил Орден Почета Дементьевой
+                    .lead
+                      Suspendisse eleifend nisi at ante. Phasellus euismod vestibulum nisl.
+                  %li.last
+                    %img.hidden(src="/images/top_news_image3.jpg" width="309" height="222")
+                    .time
+                      11:00
+                    %h2
+                      %a(href="")
+                        %nobr
+                          Российские волейболистки продолжают выигрывать
+                    .lead
+                      9 ноября, стартовали официальные продажи планшетного компьютера Apple iPad.
+            %dt.last
+              %table
+                %tr
+                  %td
+                    Дальний восток
+                  %td
+                    .end
+            %dd
+              .content
+                %ul
+                  %li.active
+                    %img(src="/images/top_news_image4.jpg" width="309" height="222")
+                    .time
+                      15:45
+                    %h2
+                      %a(href="")
+                        %nobr
+                          I touch myself
+                    .lead
+                      9 ноября, стартовали официальные продажи планшетного компьютера Apple iPad.
+                  %li
+                    %img.hidden(src="/images/top_news_image5.jpg" width="309" height="222")
+                    .time
+                      14:32
+                    %h2
+                      %a(href="")
+                        %nobr
+                          Во исполнение Закона о статусе военнослужащих
+                    .lead
+                      Nunc mattis eros ut risus. Donec ultricies euismod nibh.
+                  %li.last
+                    %img.hidden(src="/images/top_news_image6.jpg" width="309" height="222")
+                    .time
+                      11:00
+                    %h2
+                      %a(href="")
+                        %nobr
+                          Экскурсия по офису головного Яндекса
+                    .lead
+                      Nulla accumsan. Aenean purus sapien
         #sidebar
           .gray-line
           .sidebar-container
@@ -91,3 +170,5 @@
               RSS
         .copyright
           Copyright 2010 «DV-News» все права защищены
+    = javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
+    = javascript_include_tag 'application'

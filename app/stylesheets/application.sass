@@ -157,8 +157,6 @@ body
     color: #bebebe
     right: $total_width - $sidebar_width
 
-    
-
 .hot-news-container
   background-color: #e4e5e6
   padding-left: $global_left_padding
@@ -174,17 +172,126 @@ body
       color: white
       padding-top: 7px
       padding-left: 5px
-    .new-text
+    h1
       color: #303030
       position: absolute
       top: 7px
       font-size: 12px
       left: 90px
+      a
+        color: inherit
+        text-decoration: none
+      a:hover
+        text-decoration: underline
 
-.top-news
+dl.top-news
   background-color: #e4e5e6
   padding-left: $global_left_padding
   padding-top: 9px
+  height: 20px
+  font-size: 13px
+  font-family: Verdana, serif
+  height: 100%
+  position: relative
+  overflow: hidden
+  dt
+    position: relative
+    cursor: pointer
+    background-color: #f8f8f9
+    float: left
+    height: 100%
+    padding-left: 6px
+    color: 4e4e4e
+    .end
+      width: 6px
+      height: 20px
+      display: inline-block
+      background-color: #f8f8f9
+      float: right
+
+  .last
+    .end
+      background: url(/images/top_news_menu.png) scroll no-repeat
+      background-color: #e4e5e6 !important
+
+  .active
+    background-color: #6fb111
+    color: #f8f8f9
+    .end
+      background: url(/images/top_news_menu_active.png) scroll no-repeat
+      background-color: #f8f8f9
+    td
+      font-weight: bold
+  dd
+    float: right
+    position: relative
+    margin: 20px 0 0 -100%
+    width: 100%
+    display: none
+    .content
+      background-color: #c2c2c2
+      width: 100%
+      height: 232px
+      img
+        margin-top: 5px
+        margin-left: 6px
+        float: left
+      ul
+        list-style: none
+        width: 380px
+        float: right
+        margin-top: 5px
+        margin-right: 15px
+        height: 222px
+        position: relative
+        li
+          background-color: white
+          margin-bottom: 1px
+          width: 390px
+          height: 73px
+          img
+            position: absolute
+            left: -320px
+            top: -5px
+            display: none
+          *
+            margin-left: 5px
+          h2
+            color: #4e4e4e
+            font-size: 13px
+            font-family: Georgia, sans-serif
+            margin-top: 3px
+            margin-bottom: 3px
+            a
+              color: inherit
+              text-decoration: none
+              margin: 0
+              padding: 0
+              nobr
+                margin: 0
+            a:hover
+              text-decoration: underline
+          .time
+            color: #a8a8a8
+            font-size: 17px
+          .lead
+            font-size: 10px
+            font-family: Verdana
+            color: #4e4e4e
+        li.active
+          img
+            display: block
+        li.active, li:hover
+          h2
+            color: #528c00
+        li.last
+          margin-bottom: 0
+          height: 74px
+  dd.active
+    display: block
+.hidden
+  display: none
+
 
 
 .sidebar-container
@@ -233,4 +340,5 @@ body
           .price
             color: #65ab00
             background: url(/images/plus.gif) no-repeat scroll 100% 2px transparent
-          
+.clear
+  clear: both
