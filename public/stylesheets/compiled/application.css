@@ -557,7 +557,7 @@ dl.top-news dd.active {
   clear: both;
 }
 
-/* line 351, ../../../app/stylesheets/application.sass */
+/* line 350, ../../../app/stylesheets/application.sass */
 .news-container {
   width: 100%;
   background-color: #f1f6f1;
@@ -565,25 +565,25 @@ dl.top-news dd.active {
   padding: 0;
   position: relative;
 }
-/* line 357, ../../../app/stylesheets/application.sass */
+/* line 356, ../../../app/stylesheets/application.sass */
 .news-container .light-green-line {
   height: 1px;
   width: 100%;
   position: absolute;
   display: block;
-  top: 31px;
+  top: 29px;
   background-color: #a3cd6b;
   margin-left: 0;
   margin-right: 20px;
 }
-/* line 366, ../../../app/stylesheets/application.sass */
+/* line 365, ../../../app/stylesheets/application.sass */
 .news-container dl {
   margin-top: 8px;
   position: relative;
   overflow: hidden;
   margin-left: 20px;
 }
-/* line 371, ../../../app/stylesheets/application.sass */
+/* line 370, ../../../app/stylesheets/application.sass */
 .news-container dl dt {
   position: relative;
   cursor: pointer;
@@ -595,18 +595,18 @@ dl.top-news dd.active {
   padding-bottom: 6px;
   margin-bottom: 6px;
 }
-/* line 381, ../../../app/stylesheets/application.sass */
+/* line 380, ../../../app/stylesheets/application.sass */
 .news-container dl dt.active {
   font-weight: bold;
   color: #6fb111;
   border-bottom: 3px solid #6fb111;
 }
-/* line 385, ../../../app/stylesheets/application.sass */
+/* line 384, ../../../app/stylesheets/application.sass */
 .news-container dl dt:hover {
   color: #6fb111;
   border-bottom: 3px solid #6fb111;
 }
-/* line 388, ../../../app/stylesheets/application.sass */
+/* line 387, ../../../app/stylesheets/application.sass */
 .news-container dl dd {
   float: right;
   width: 100%;
@@ -614,32 +614,32 @@ dl.top-news dd.active {
   margin: 20px 0 0 -100%;
   display: none;
 }
-/* line 394, ../../../app/stylesheets/application.sass */
+/* line 393, ../../../app/stylesheets/application.sass */
 .news-container dl dd .time {
   font-size: 9px;
   color: white;
   background-color: #aaaaaa;
   padding: 1 px;
 }
-/* line 399, ../../../app/stylesheets/application.sass */
+/* line 398, ../../../app/stylesheets/application.sass */
 .news-container dl dd a {
   color: #010101;
   font-size: 12px;
   text-decoration: none;
 }
-/* line 403, ../../../app/stylesheets/application.sass */
+/* line 402, ../../../app/stylesheets/application.sass */
 .news-container dl dd a:hover {
   text-decoration: underline;
 }
-/* line 405, ../../../app/stylesheets/application.sass */
+/* line 404, ../../../app/stylesheets/application.sass */
 .news-container dl dd tr {
   margin-bottom: 10px;
 }
-/* line 409, ../../../app/stylesheets/application.sass */
+/* line 408, ../../../app/stylesheets/application.sass */
 .news-container dl dd.active {
   display: block;
 }
-/* line 411, ../../../app/stylesheets/application.sass */
+/* line 410, ../../../app/stylesheets/application.sass */
 .news-container table {
   border-collapse: separate;
   border-spacing: 10px;
