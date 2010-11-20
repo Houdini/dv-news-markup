@@ -110,34 +110,15 @@
                       Nulla accumsan. Aenean purus sapien
           .gray-line-margin
           = render 'shared/common_news'
+          = render 'shared/category_list'
+          = render 'shared/stories'
         #sidebar
           .gray-line
           .sidebar-container
-            .block
-              .title
-                Курсы валют
-              .content
-                %ul.indicator-list
-                  %li.minus
-                    %span.name
-                      Доллар США
-                    %span.price
-                      30.7709
-                    %span.abs_relative
-                      (-0.0232)
-                  %li.plus
-                    %span.name
-                      Евро
-                    %span.price
-                      43.1654
-                    %span.abs_relative
-                      (+0.2507)
-            .block
-              .title
-                Видео
-            .block
-              .title
-                Интервью
+            = render 'sidebar/markets'
+            = render 'sidebar/video'
+            = render 'sidebar/interview'
+
             .block
               .title
                 Фоторепортаж
