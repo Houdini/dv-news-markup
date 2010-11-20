@@ -32,7 +32,7 @@ $global_left_padding: 20px
       float: left
       margin-top: 3px
 @mixin title($color, $size)
-  h2
+  h2, h3
     font-size: $size
     color: $color
     @include a_inherit
@@ -161,7 +161,7 @@ body
     float: right
     background-color: #fff
     .gray-line
-      width: $total_width - $sidebar_width - 1px
+      width: 100%
       height: 9px
       background-color: #e4e5e6
 #footer
@@ -345,13 +345,13 @@ dl.top-news
       padding-left: 11px
       margin-top: 10px
       padding-bottom: 5px
+      @include a_inherit
     .content
       background-color: #f4f4f4
       border-top: 1px solid #dfdfdf
       font-size: 12px
       color: #666
       width: $total_width - $sidebar_width - 8px - $global_left_padding
-      margin-top: 5px
       padding-top: 5px
       padding-bottom: 5px
       .indicator-list
@@ -382,10 +382,87 @@ dl.top-news
       img
         margin-left: 5px
         margin-right: 5px
-      @include title(#33a02c, 13px)
+      @include title(#33a02c, 12px)
       p
         color: #4e4e4e
-        font-size: 9px
+        font-size: 10px
+    .press-review
+      ul
+        list-style: none
+        padding-left: 11px
+        li
+          margin-top: 22px 
+          @include title(#4e4e4e, 9px)
+          h2
+            font-weight: bold
+          .time
+            font-size: 9px
+            color: #4e4e4e
+            margin-left: -2px
+            margin-bottom: 3px
+        li:first-child
+          margin-top: 0px
+  .blogs
+    .logo
+      border-top: 1px solid #dfdfdf
+    .info
+      margin-left: 11px
+      margin-bottom: 16px
+      @include title(#0084ff, 9px)
+      h3
+        a
+          text-decoration: underline !important
+    .info:first-child
+      margin-top: 10px
+    .content
+      border-top: none
+  .rating
+    .content
+      @include title(#33a02c, 11px)
+      h2, h3
+        margin-left: 11px
+      img
+        margin-top: 5px
+        padding-bottom: 5px
+        border-bottom: 1px solid #dfdfdf
+        margin-bottom: 8px
+      .info
+        margin-bottom: 10px
+        @include title(#4e4e4e, 9px)
+        h3
+          font-weight: bold
+  .popular
+    .content
+      padding-top: 0
+      .news-container
+        background-color: inherit
+        border-top-color: #F4F4F4
+  .photo
+    ul
+      list-style: none
+      li
+        display: inline
+        h2
+          display: none
+        img
+          margin-left: 4px
+      li:first-child
+        display: block
+        img
+          width: 0 auto
+          padding-bottom: 5px
+          border-bottom: 1px solid #dfdfdf
+          margin-bottom: 5px
+        @include title(#33a02c, 12px)
+        h2, h3
+          display: block
+          margin-left: 11px
+          margin-bottom: 4px
+      li.last
+        float: right
+        img
+          margin-right: 4px
+
 .clear
   clear: both
 $border_spacing = 10px
@@ -437,6 +514,7 @@ $border_spacing = 10px
         color: white
         background-color: #aaa
         padding: 1 px
+        margin-top: 3px
       a
         color: #010101
         font-size: 12px
@@ -445,6 +523,18 @@ $border_spacing = 10px
         text-decoration: underline
       tr
         margin-bottom: 10px
+      ul
+        li
+          margin-bottom: 10px
+          .time
+            background-color: transparent
+            color: #4e4e4e
+          @include title(#4e4e4e, 9px)
+          h2
+            font-weight: bold
+        li:first-child
+          margin-top: 10px
+
         
         
     dd.active
