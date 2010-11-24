@@ -1,0 +1,13 @@
+= render 'shared/top_news'
+= render 'shared/common_news'
+= render 'shared/category_list'
+= render 'shared/stories'
+- content_for :sidebar do
+  = render 'sidebar/markets'
+  = render 'sidebar/video'
+  = render 'sidebar/interview'
+  = render 'sidebar/photo'
+  = render 'sidebar/popular'
+  = render 'sidebar/blogs'
+  = render 'sidebar/press_review'
+  = render 'sidebar/ratings'

@@ -1,4 +1,9 @@
 Dvnews::Application.routes.draw do
+  resources :articles, :only => :index
+  resources :blogs, :only => :index
+  resources :page_not_found, :only => :index
+  resources :interviews, :only => :index
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
