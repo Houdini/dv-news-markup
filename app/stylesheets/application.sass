@@ -16,26 +16,27 @@ $link: #7fade0
 
 @mixin block_title($rect_color)
   .title
-    font-size: 17px
+    font-size: 18px
     color: #4e4e4e
     font-style: italic
     font-family: Geogia
     font-weight: bold
     position: float
-    a
+    a, div
       text-decoration: none
       font-size: inherit
       color: inherit
-      margin-left: 3px
+      margin-left: 4px
+      display: inline
     span
       display: block
       width: 7px
       height: 13px
       background-color: $rect_color
       float: left
-      margin-top: 3px
+      margin-top: 4px
 @mixin title($color, $size)
-  h2, h3
+  h1, h2, h3
     font-size: $size
     color: $color
     @include a_inherit
@@ -241,6 +242,90 @@ body
         a
           margin-right: 5px
           margin-left: 0
+
+    .job
+      .element
+        margin-bottom: 16px
+        @include block_title(#70a822)
+        br
+          display: none
+        a
+          display: none
+        ul
+          margin-left: 20px
+          list-style: none
+          li
+            font-size: 11px
+            margin-bottom: 5px
+            a
+              display: inline
+              color: $gray
+              text-decoration: none
+            a:hover
+              text-decoration: underline
+        hr
+          margin-bottom: 15px
+          margin-top: 9px
+
+    .single_news
+      padding-top: 5px
+      a.arrow
+        color: #7fade0
+        font-size: 13px
+        background: url(/images/back_arrow.png) 0 2px no-repeat
+        padding-left: 30px
+      .al_bottom1
+        margin-top: 10px
+      @include title($gray, 13px)
+      .time
+        font-size: 9px
+        font-weight: bold
+        color: #a6a6a6
+        margin-bottom: 10px
+        a
+          color: #7fade0
+      h1
+        font-weight: bold
+        font-family: Georgia
+
+      img
+        margin-right: 8px
+      p
+        font-size: 11px
+        color: $gray
+        font-family: Verdana, serif
+        margin-top: 13px
+        a
+          color: #7fade0
+      .author
+        text-align: right
+        color: #0e5370
+        font-weight: bold
+        font-family: Verdana
+        font-size: 11px
+        margin-top: 10px
+      .social
+        border-top: 1px solid #d7d7d7
+        margin-top: 6px
+        span
+          float: right
+          margin-left: 20px
+          vertical-align: middle
+        .fb-share
+          margin-top: 2px
+        .twitter
+          margin-top: 1px
+        a.comment
+          float: left
+          color: #7fade0
+          font-size: 9px
+          padding-top: 3px
+      .social-bottom
+        border-bottom: 1px solid #d7d7d7
+        display:block
+        widht: 100%
+        padding-top: 23px
+
 
   #sidebar
     width: $total_width - $sidebar_width 
