@@ -2,8 +2,10 @@
 %html
   %header
     %link(rel="stylesheet" type="text/css" href="/stylesheets/compiled/application.css")
+    %link(rel="stylesheet" type="text/css" href="/stylesheets/jqtransform.css")
   :plain
-    <style type="text/css">@-moz-document url-prefix(){.light-green-line{top: 31px !important}}</style>    
+    <style type="text/css">@-moz-document url-prefix(){.light-green-line{top: 31px !important}}</style>
+    <script type="text/javascript" src="http://vkontakte.ru/js/api/share.js?10" charset="windows-1251"></script>
   %body
     .content
       .top
@@ -48,4 +50,5 @@
         .copyright
           Copyright 2010 «DV-News» все права защищены
     = javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
+    = javascript_include_tag 'jquery.jqtransform'
     = javascript_include_tag 'application'

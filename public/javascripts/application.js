@@ -9,7 +9,9 @@ $(function(){
     $('div.news-container dl dt').click(function(){
         $(this).siblings().removeClass('active').end().next('dd').andSelf().addClass('active');
     });
+    $('form.jqtransform').jqTransform();
 });
+
 function hideFormText() {
 	var _inputs = document.getElementsByTagName('input');
 	var _txt = document.getElementsByTagName('textarea');
@@ -39,7 +41,6 @@ function hideFormText() {
 			_value['txt'+i] = _txt[i].value;
 
 			_txt[i].onfocus = function(){
-				alert(this.value.indexOf('@'));
 				if (this.value == _value['txt'+this.index] && this.value.indexOf('@') == -1)
 					this.value = '';
 			}
