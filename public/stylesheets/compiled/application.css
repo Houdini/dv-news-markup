@@ -729,7 +729,7 @@ dl.top-news dd .content ul li * {
 /* line 463, ../../../app/stylesheets/application.sass */
 dl.top-news dd .content ul li h2 {
   color: #4e4e4e;
-  font-size: 13px;
+  font-size: 12px;
   font-family: Georgia, sans-serif;
   margin-top: 3px;
   margin-bottom: 3px;
@@ -753,7 +753,7 @@ dl.top-news dd .content ul li h2 a:hover {
 /* line 479, ../../../app/stylesheets/application.sass */
 dl.top-news dd .content ul li .time {
   color: #a8a8a8;
-  font-size: 17px;
+  font-size: 16px;
 }
 /* line 482, ../../../app/stylesheets/application.sass */
 dl.top-news dd .content ul li .lead {
