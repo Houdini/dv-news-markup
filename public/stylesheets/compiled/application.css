@@ -754,32 +754,33 @@ dl.top-news dd .content ul li h2 a:hover {
 dl.top-news dd .content ul li .time {
   color: #a8a8a8;
   font-size: 16px;
+  font-family: Georgia, sans-serif;
 }
-/* line 482, ../../../app/stylesheets/application.sass */
+/* line 483, ../../../app/stylesheets/application.sass */
 dl.top-news dd .content ul li .lead {
   font-size: 10px;
   font-family: Verdana;
   color: #4e4e4e;
 }
-/* line 487, ../../../app/stylesheets/application.sass */
+/* line 488, ../../../app/stylesheets/application.sass */
 dl.top-news dd .content ul li.active img {
   display: block;
 }
-/* line 490, ../../../app/stylesheets/application.sass */
+/* line 491, ../../../app/stylesheets/application.sass */
 dl.top-news dd .content ul li.active h2, dl.top-news dd .content ul li:hover h2 {
   color: #528c00;
 }
-/* line 492, ../../../app/stylesheets/application.sass */
+/* line 493, ../../../app/stylesheets/application.sass */
 dl.top-news dd .content ul li.last {
   margin-bottom: 0;
   height: 74px;
 }
-/* line 495, ../../../app/stylesheets/application.sass */
+/* line 496, ../../../app/stylesheets/application.sass */
 dl.top-news dd.active {
   display: block;
 }
 
-/* line 497, ../../../app/stylesheets/application.sass */
+/* line 498, ../../../app/stylesheets/application.sass */
 .gray-line-margin {
   background-color: #e4e5e6;
   width: 100%;
@@ -787,7 +788,7 @@ dl.top-news dd.active {
   display: block;
 }
 
-/* line 502, ../../../app/stylesheets/application.sass */
+/* line 503, ../../../app/stylesheets/application.sass */
 .gray-line {
   background-color: #e4e5e6;
   width: 100%;
@@ -795,17 +796,17 @@ dl.top-news dd.active {
   display: block;
 }
 
-/* line 507, ../../../app/stylesheets/application.sass */
+/* line 508, ../../../app/stylesheets/application.sass */
 .hidden {
   display: none;
 }
 
-/* line 510, ../../../app/stylesheets/application.sass */
+/* line 511, ../../../app/stylesheets/application.sass */
 .sidebar-container {
   padding-left: 8px;
   padding-right: 20px;
 }
-/* line 515, ../../../app/stylesheets/application.sass */
+/* line 516, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .title {
   font-family: Georgia;
   font-style: italic;
@@ -826,7 +827,7 @@ dl.top-news dd.active {
 .sidebar-container .block .title a:hover {
   text-decoration: underline;
 }
-/* line 525, ../../../app/stylesheets/application.sass */
+/* line 526, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content {
   background-color: #f4f4f4;
   border-top: 1px solid #dfdfdf;
@@ -836,42 +837,42 @@ dl.top-news dd.active {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-/* line 533, ../../../app/stylesheets/application.sass */
+/* line 534, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content .indicator-list {
   list-style: none outside none;
   position: relative;
   padding-bottom: 1px;
 }
-/* line 537, ../../../app/stylesheets/application.sass */
+/* line 538, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content .indicator-list li {
   margin-bottom: 10px;
 }
-/* line 539, ../../../app/stylesheets/application.sass */
+/* line 540, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content .indicator-list .name {
   margin-left: 11px;
 }
-/* line 541, ../../../app/stylesheets/application.sass */
+/* line 542, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content .indicator-list .price {
   position: absolute;
   left: 100px;
   padding-right: 10px;
 }
-/* line 545, ../../../app/stylesheets/application.sass */
+/* line 546, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content .indicator-list .abs_relative {
   position: absolute;
   right: 1px;
 }
-/* line 550, ../../../app/stylesheets/application.sass */
+/* line 551, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content .indicator-list .minus .price {
   color: #e10000;
   background: url(/images/minus.gif) no-repeat scroll 100% 0 transparent;
 }
-/* line 554, ../../../app/stylesheets/application.sass */
+/* line 555, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .content .indicator-list .plus .price {
   color: #65ab00;
   background: url(/images/plus.gif) no-repeat scroll 100% 2px transparent;
 }
-/* line 558, ../../../app/stylesheets/application.sass */
+/* line 559, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .interview img {
   margin-left: 5px;
   margin-right: 5px;
@@ -891,17 +892,17 @@ dl.top-news dd.active {
 .sidebar-container .block .interview h1 a:hover, .sidebar-container .block .interview h2 a:hover, .sidebar-container .block .interview h3 a:hover {
   text-decoration: underline;
 }
-/* line 562, ../../../app/stylesheets/application.sass */
+/* line 563, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .interview p {
   color: #4e4e4e;
   font-size: 10px;
 }
-/* line 566, ../../../app/stylesheets/application.sass */
+/* line 567, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .press-review ul {
   list-style: none;
   padding-left: 11px;
 }
-/* line 569, ../../../app/stylesheets/application.sass */
+/* line 570, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .press-review ul li {
   margin-top: 22px;
 }
@@ -920,26 +921,26 @@ dl.top-news dd.active {
 .sidebar-container .block .press-review ul li h1 a:hover, .sidebar-container .block .press-review ul li h2 a:hover, .sidebar-container .block .press-review ul li h3 a:hover {
   text-decoration: underline;
 }
-/* line 572, ../../../app/stylesheets/application.sass */
+/* line 573, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .press-review ul li h2 {
   font-weight: bold;
 }
-/* line 574, ../../../app/stylesheets/application.sass */
+/* line 575, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .press-review ul li .time {
   font-size: 9px;
   color: #4e4e4e;
   margin-left: -2px;
   margin-bottom: 3px;
 }
-/* line 579, ../../../app/stylesheets/application.sass */
+/* line 580, ../../../app/stylesheets/application.sass */
 .sidebar-container .block .press-review ul li:first-child {
   margin-top: 0px;
 }
-/* line 582, ../../../app/stylesheets/application.sass */
+/* line 583, ../../../app/stylesheets/application.sass */
 .sidebar-container .blogs .logo {
   border-top: 1px solid #dfdfdf;
 }
-/* line 584, ../../../app/stylesheets/application.sass */
+/* line 585, ../../../app/stylesheets/application.sass */
 .sidebar-container .blogs .info {
   margin-left: 11px;
   margin-bottom: 16px;
@@ -959,15 +960,15 @@ dl.top-news dd.active {
 .sidebar-container .blogs .info h1 a:hover, .sidebar-container .blogs .info h2 a:hover, .sidebar-container .blogs .info h3 a:hover {
   text-decoration: underline;
 }
-/* line 589, ../../../app/stylesheets/application.sass */
+/* line 590, ../../../app/stylesheets/application.sass */
 .sidebar-container .blogs .info h3 a {
   text-decoration: underline !important;
 }
-/* line 591, ../../../app/stylesheets/application.sass */
+/* line 592, ../../../app/stylesheets/application.sass */
 .sidebar-container .blogs .info:first-child {
   margin-top: 10px;
 }
-/* line 593, ../../../app/stylesheets/application.sass */
+/* line 594, ../../../app/stylesheets/application.sass */
 .sidebar-container .blogs .content {
   border-top: none;
 }
@@ -986,18 +987,18 @@ dl.top-news dd.active {
 .sidebar-container .rating .content h1 a:hover, .sidebar-container .rating .content h2 a:hover, .sidebar-container .rating .content h3 a:hover {
   text-decoration: underline;
 }
-/* line 598, ../../../app/stylesheets/application.sass */
+/* line 599, ../../../app/stylesheets/application.sass */
 .sidebar-container .rating .content h2, .sidebar-container .rating .content h3 {
   margin-left: 11px;
 }
-/* line 600, ../../../app/stylesheets/application.sass */
+/* line 601, ../../../app/stylesheets/application.sass */
 .sidebar-container .rating .content img {
   margin-top: 5px;
   padding-bottom: 5px;
   border-bottom: 1px solid #dfdfdf;
   margin-bottom: 8px;
 }
-/* line 605, ../../../app/stylesheets/application.sass */
+/* line 606, ../../../app/stylesheets/application.sass */
 .sidebar-container .rating .content .info {
   margin-bottom: 10px;
 }
@@ -1016,40 +1017,40 @@ dl.top-news dd.active {
 .sidebar-container .rating .content .info h1 a:hover, .sidebar-container .rating .content .info h2 a:hover, .sidebar-container .rating .content .info h3 a:hover {
   text-decoration: underline;
 }
-/* line 608, ../../../app/stylesheets/application.sass */
+/* line 609, ../../../app/stylesheets/application.sass */
 .sidebar-container .rating .content .info h3 {
   font-weight: bold;
 }
-/* line 611, ../../../app/stylesheets/application.sass */
+/* line 612, ../../../app/stylesheets/application.sass */
 .sidebar-container .popular .content {
   padding-top: 0;
 }
-/* line 613, ../../../app/stylesheets/application.sass */
+/* line 614, ../../../app/stylesheets/application.sass */
 .sidebar-container .popular .content .news-container {
   background-color: inherit;
   border-top-color: #f4f4f4;
 }
-/* line 617, ../../../app/stylesheets/application.sass */
+/* line 618, ../../../app/stylesheets/application.sass */
 .sidebar-container .photo ul {
   list-style: none;
 }
-/* line 619, ../../../app/stylesheets/application.sass */
+/* line 620, ../../../app/stylesheets/application.sass */
 .sidebar-container .photo ul li {
   display: inline;
 }
-/* line 621, ../../../app/stylesheets/application.sass */
+/* line 622, ../../../app/stylesheets/application.sass */
 .sidebar-container .photo ul li h2 {
   display: none;
 }
-/* line 623, ../../../app/stylesheets/application.sass */
+/* line 624, ../../../app/stylesheets/application.sass */
 .sidebar-container .photo ul li img {
   margin-left: 4px;
 }
-/* line 625, ../../../app/stylesheets/application.sass */
+/* line 626, ../../../app/stylesheets/application.sass */
 .sidebar-container .photo ul li:first-child {
   display: block;
 }
-/* line 627, ../../../app/stylesheets/application.sass */
+/* line 628, ../../../app/stylesheets/application.sass */
 .sidebar-container .photo ul li:first-child img {
   width: 0 auto;
   padding-bottom: 5px;
@@ -1071,27 +1072,27 @@ dl.top-news dd.active {
 .sidebar-container .photo ul li:first-child h1 a:hover, .sidebar-container .photo ul li:first-child h2 a:hover, .sidebar-container .photo ul li:first-child h3 a:hover {
   text-decoration: underline;
 }
-/* line 633, ../../../app/stylesheets/application.sass */
+/* line 634, ../../../app/stylesheets/application.sass */
 .sidebar-container .photo ul li:first-child h2, .sidebar-container .photo ul li:first-child h3 {
   display: block;
   margin-left: 11px;
   margin-bottom: 4px;
 }
-/* line 637, ../../../app/stylesheets/application.sass */
+/* line 638, ../../../app/stylesheets/application.sass */
 .sidebar-container .photo ul li.last {
   float: right;
 }
-/* line 639, ../../../app/stylesheets/application.sass */
+/* line 640, ../../../app/stylesheets/application.sass */
 .sidebar-container .photo ul li.last img {
   margin-right: 4px;
 }
 
-/* line 642, ../../../app/stylesheets/application.sass */
+/* line 643, ../../../app/stylesheets/application.sass */
 .clear {
   clear: both;
 }
 
-/* line 645, ../../../app/stylesheets/application.sass */
+/* line 646, ../../../app/stylesheets/application.sass */
 .news-container {
   width: 100%;
   background-color: #f1f6f1;
@@ -1099,7 +1100,7 @@ dl.top-news dd.active {
   padding: 0;
   position: relative;
 }
-/* line 651, ../../../app/stylesheets/application.sass */
+/* line 652, ../../../app/stylesheets/application.sass */
 .news-container .light-green-line {
   height: 1px;
   width: 100%;
@@ -1110,14 +1111,14 @@ dl.top-news dd.active {
   margin-left: 0;
   margin-right: 20px;
 }
-/* line 660, ../../../app/stylesheets/application.sass */
+/* line 661, ../../../app/stylesheets/application.sass */
 .news-container dl {
   margin-top: 8px;
   position: relative;
   overflow: hidden;
   margin-left: 20px;
 }
-/* line 665, ../../../app/stylesheets/application.sass */
+/* line 666, ../../../app/stylesheets/application.sass */
 .news-container dl dt {
   position: relative;
   cursor: pointer;
@@ -1129,18 +1130,18 @@ dl.top-news dd.active {
   padding-bottom: 6px;
   margin-bottom: 6px;
 }
-/* line 675, ../../../app/stylesheets/application.sass */
+/* line 676, ../../../app/stylesheets/application.sass */
 .news-container dl dt.active {
   font-weight: bold;
   color: #6fb111;
   border-bottom: 3px solid #6fb111;
 }
-/* line 679, ../../../app/stylesheets/application.sass */
+/* line 680, ../../../app/stylesheets/application.sass */
 .news-container dl dt:hover {
   color: #6fb111;
   border-bottom: 3px solid #6fb111;
 }
-/* line 682, ../../../app/stylesheets/application.sass */
+/* line 683, ../../../app/stylesheets/application.sass */
 .news-container dl dd {
   float: right;
   width: 100%;
@@ -1148,7 +1149,7 @@ dl.top-news dd.active {
   margin: 20px 0 0 -100%;
   display: none;
 }
-/* line 688, ../../../app/stylesheets/application.sass */
+/* line 689, ../../../app/stylesheets/application.sass */
 .news-container dl dd .time {
   font-size: 9px;
   color: white;
@@ -1156,30 +1157,30 @@ dl.top-news dd.active {
   padding: 1 px;
   margin-top: 3px;
 }
-/* line 694, ../../../app/stylesheets/application.sass */
+/* line 695, ../../../app/stylesheets/application.sass */
 .news-container dl dd a {
   color: #010101;
   font-size: 12px;
   text-decoration: none;
 }
-/* line 698, ../../../app/stylesheets/application.sass */
+/* line 699, ../../../app/stylesheets/application.sass */
 .news-container dl dd a:hover {
   text-decoration: underline;
 }
-/* line 700, ../../../app/stylesheets/application.sass */
+/* line 701, ../../../app/stylesheets/application.sass */
 .news-container dl dd tr {
   margin-bottom: 10px;
 }
-/* line 702, ../../../app/stylesheets/application.sass */
+/* line 703, ../../../app/stylesheets/application.sass */
 .news-container dl dd ul {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 705, ../../../app/stylesheets/application.sass */
+/* line 706, ../../../app/stylesheets/application.sass */
 .news-container dl dd ul li {
   margin-bottom: 10px;
 }
-/* line 707, ../../../app/stylesheets/application.sass */
+/* line 708, ../../../app/stylesheets/application.sass */
 .news-container dl dd ul li .time {
   background-color: transparent;
   color: #4e4e4e;
@@ -1199,36 +1200,36 @@ dl.top-news dd.active {
 .news-container dl dd ul li h1 a:hover, .news-container dl dd ul li h2 a:hover, .news-container dl dd ul li h3 a:hover {
   text-decoration: underline;
 }
-/* line 711, ../../../app/stylesheets/application.sass */
+/* line 712, ../../../app/stylesheets/application.sass */
 .news-container dl dd ul li h2 {
   font-weight: bold;
 }
-/* line 713, ../../../app/stylesheets/application.sass */
+/* line 714, ../../../app/stylesheets/application.sass */
 .news-container dl dd ul li:first-child {
   margin-top: 10px;
 }
-/* line 718, ../../../app/stylesheets/application.sass */
+/* line 719, ../../../app/stylesheets/application.sass */
 .news-container dl dd.active {
   display: block;
 }
-/* line 720, ../../../app/stylesheets/application.sass */
+/* line 721, ../../../app/stylesheets/application.sass */
 .news-container table {
   border-collapse: separate;
   border-spacing: 10px;
   margin-left: -10px;
 }
 
-/* line 725, ../../../app/stylesheets/application.sass */
+/* line 726, ../../../app/stylesheets/application.sass */
 .category-list {
   margin-top: 10px;
 }
-/* line 727, ../../../app/stylesheets/application.sass */
+/* line 728, ../../../app/stylesheets/application.sass */
 .category-list .horizontal-block {
   clear: both;
   padding-left: 20px;
   padding-top: 20px;
 }
-/* line 731, ../../../app/stylesheets/application.sass */
+/* line 732, ../../../app/stylesheets/application.sass */
 .category-list .horizontal-block .block {
   border-bottom: 1px solid #d7d7d7;
   padding-bottom: 20px;
@@ -1263,11 +1264,11 @@ dl.top-news dd.active {
   float: left;
   margin-top: 4px;
 }
-/* line 739, ../../../app/stylesheets/application.sass */
+/* line 740, ../../../app/stylesheets/application.sass */
 .category-list .horizontal-block .block ul {
   list-style: none;
 }
-/* line 741, ../../../app/stylesheets/application.sass */
+/* line 742, ../../../app/stylesheets/application.sass */
 .category-list .horizontal-block .block ul li {
   margin-bottom: 10px;
   position: relative;
@@ -1287,15 +1288,15 @@ dl.top-news dd.active {
 .category-list .horizontal-block .block ul li h1 a:hover, .category-list .horizontal-block .block ul li h2 a:hover, .category-list .horizontal-block .block ul li h3 a:hover {
   text-decoration: underline;
 }
-/* line 745, ../../../app/stylesheets/application.sass */
+/* line 746, ../../../app/stylesheets/application.sass */
 .category-list .horizontal-block .block ul li h2 {
   margin-left: 40px;
 }
-/* line 747, ../../../app/stylesheets/application.sass */
+/* line 748, ../../../app/stylesheets/application.sass */
 .category-list .horizontal-block .block ul li img {
   display: none;
 }
-/* line 749, ../../../app/stylesheets/application.sass */
+/* line 750, ../../../app/stylesheets/application.sass */
 .category-list .horizontal-block .block ul li .time {
   float: left;
   color: #4e4e4e;
@@ -1304,19 +1305,19 @@ dl.top-news dd.active {
   position: absolute;
   top: 2px;
 }
-/* line 757, ../../../app/stylesheets/application.sass */
+/* line 758, ../../../app/stylesheets/application.sass */
 .category-list .horizontal-block .block ul li:first-child {
   background-color: #f4f4f4;
   border-top: 1px solid #dfdfdf;
   padding: 3px;
 }
-/* line 761, ../../../app/stylesheets/application.sass */
+/* line 762, ../../../app/stylesheets/application.sass */
 .category-list .horizontal-block .block ul li:first-child img {
   display: block;
   float: left;
   margin-right: 7px;
 }
-/* line 765, ../../../app/stylesheets/application.sass */
+/* line 766, ../../../app/stylesheets/application.sass */
 .category-list .horizontal-block .block ul li:first-child .time {
   font-size: 9px;
   font-family: Verdana;
@@ -1340,23 +1341,23 @@ dl.top-news dd.active {
 .category-list .horizontal-block .block ul li:first-child h1 a:hover, .category-list .horizontal-block .block ul li:first-child h2 a:hover, .category-list .horizontal-block .block ul li:first-child h3 a:hover {
   text-decoration: underline;
 }
-/* line 773, ../../../app/stylesheets/application.sass */
+/* line 774, ../../../app/stylesheets/application.sass */
 .category-list .horizontal-block .block ul li:first-child h2 {
   font-weight: bold;
 }
-/* line 775, ../../../app/stylesheets/application.sass */
+/* line 776, ../../../app/stylesheets/application.sass */
 .category-list .horizontal-block .block ul li:first-child .lead {
   font-size: 11px;
   font-family: Verdana;
   color: #4e4e4e;
 }
-/* line 779, ../../../app/stylesheets/application.sass */
+/* line 780, ../../../app/stylesheets/application.sass */
 .category-list .horizontal-block .right {
   float: right;
   margin-right: 0;
 }
 
-/* line 783, ../../../app/stylesheets/application.sass */
+/* line 784, ../../../app/stylesheets/application.sass */
 .stories {
   margin-top: 20px;
   margin-left: 20px;
@@ -1387,14 +1388,14 @@ dl.top-news dd.active {
   float: left;
   margin-top: 4px;
 }
-/* line 787, ../../../app/stylesheets/application.sass */
+/* line 788, ../../../app/stylesheets/application.sass */
 .stories .content {
   background-color: #f4f4f4;
   border-top: 1px solid #dfdfdf;
   padding: 3px;
   width: 100%;
 }
-/* line 792, ../../../app/stylesheets/application.sass */
+/* line 793, ../../../app/stylesheets/application.sass */
 .stories .content table {
   width: 100%;
 }
@@ -1413,7 +1414,7 @@ dl.top-news dd.active {
 .stories .content h1 a:hover, .stories .content h2 a:hover, .stories .content h3 a:hover {
   text-decoration: underline;
 }
-/* line 795, ../../../app/stylesheets/application.sass */
+/* line 796, ../../../app/stylesheets/application.sass */
 .stories .content img {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -1424,25 +1425,25 @@ dl.top-news dd.active {
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=0, Direction=135, Color='#8c9091');
 }
 
-/* line 804, ../../../app/stylesheets/application.sass */
+/* line 805, ../../../app/stylesheets/application.sass */
 .al_bottom1 {
   display: table;
   position: relative;
   width: 100%;
 }
-/* line 808, ../../../app/stylesheets/application.sass */
+/* line 809, ../../../app/stylesheets/application.sass */
 .al_bottom1 .al_bottom2 {
   display: table-row;
   position: relative;
   width: 100%;
 }
-/* line 812, ../../../app/stylesheets/application.sass */
+/* line 813, ../../../app/stylesheets/application.sass */
 .al_bottom1 .al_bottom2 div {
   display: table-cell;
   position: relative;
   vertical-align: bottom;
 }
-/* line 816, ../../../app/stylesheets/application.sass */
+/* line 817, ../../../app/stylesheets/application.sass */
 .al_bottom1 .al_bottom2 div div {
   display: block;
   width: auto;
