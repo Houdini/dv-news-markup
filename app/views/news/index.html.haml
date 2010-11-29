@@ -15,7 +15,7 @@
           Завершился первый день саммита АТЭС в Иокогаме, Империя нанесла ответный удар
         %p.lead
           Сегодня в японском городе Иокогама начался ежегодный двухдневный форум с участием лидеров экономик Азиатско-тихоокеанского экономического сотрудничества (АТЭС). Результатом этой встречи должна стать принятая участниками декларация с подтверждением намерений либерализировать торговлю и бороться с протекционизмом для устойчивого социально-экономического роста.
-  %p
+  %blockquote
     Война продолжается. Несмотря на уничтожение Звезды Смерти, Империя выбила повстанцев с планеты Явин 4, и продолжает поиски выживших. Альянс прячет от агентов Империи свою новую базу на далёкой ледяной планете Хот (англ. Hoth). Дарт Вейдер лично возглавляет силы Империи, участвующие в поисках повстанцев. По его приказу во все уголки Галактики рассылаются зонды-разведчики. На Хоте Люк обнаруживает зонд-разведчик Империи, который ищет базу повстанцев. Люк Скайуокер слышит призыв Оби-Вана Кеноби, который велит ему лететь на планету Дагоба, где его ждёт великий джедай — мастер Йода. В снежной пустыне Люк в третий раз применяет Силу и в первый раз — световой меч, спасаясь от снежного чудища.
   %p
     Имперские зонды выслеживают базу повстанцев. Имперский флот атакует её, их встречают пилоты во главе со Скайуокером. После битвы повстанцы, в том числе Хан Соло и Лея Органа, покидают Хот. Люк улетает на Дагобу, где Йода начинает его обучение. Тем временем «Сокол Тысячелетия», на котором выходит из строя гипердвигатель позволяющий развивать скорость света и уходить в гиперпространство, подвергается атаке имперского флота, но ловко ускользает, из-за чего Дарт Вейдер даже убивает адмирала Имперского флота.
@@ -34,37 +34,70 @@
       -#    <a href="http://twitter.com/share" class="twitter-share-button" data-url="http:///n/example" data-count="none" data-via="dvnewscom">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       %span
         :plain
-          <script type="text/javascript">document.write(VK.Share.button(false,{type: "round", text: "Сохранить", title: "{title}"}));</script>
+          <!--<script type="text/javascript">document.write(VK.Share.button(false,{type: "round", text: "Сохранить", title: "{title}"}));</script>-->
       %span.fb-share
         :plain
-          <a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php">Поделиться</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+          <!--<a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php">Поделиться</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>-->
     .leave-comment
-      %form.jqtransform(action="")
-        %table
-          %tr
-            %td
-              Имя:
-            %td
-              %input(type="text" name="name" size="50")
-          %tr
-            %td
-              Эл. почта:
-            %td
-              %input(type="text" name="email" size="50")
-        %textarea(name="comment" cols="70" rows="10")
-        .form-metadata
-          .check-boxes
-            %input(type="checkbox" name="save_info" value="yes")
-            Запомнить информацию обо мне?
-            %br
-            %input(type="checkbox" name="notify_me" value="yes")
-            Оповещать меня о последующих комментариях?
-            %br
-        .comment-button
-          %input(type="submit" name="submit" value="Прокомментировать")
+      %form(action="")
+        .left-part
+          %p
+            Имя
+          .input-wrapper
+            %input(type="text" name="name" size="50")
+          %p
+            Эл. почта
+          .input-wrapper
+            %input(type="text" name="email" size="50")
+          %table
+            %tr(valign="top")
+              %td
+                %input(type="checkbox" name="save_info" value="yes")
+              %td
+                Запомнить мои данные
+            %tr(valign="top")
+              %td
+                %input(type="checkbox" name="notify_me" value="yes")
+              %td
+                :plain
+                  Оповещать меня о новых комментариях
+        .right-part
+          .captcha
+            %table
+              %tr(valign="top")
+                %td(valign="top")
+                  %img(height="30" width="140" alt="" style="border: 0pt none;" src="/images/captcha.jpg")
+                  %br
+                  %input(type="text" name="captcha" value="" size="20" maxlength="20")
+                %td(valign="top")
+                  Введите символы показанные на картинке
+          .comment-button
+            %input(type="submit" name="submit" value="Отправить")
+
+        .textarea
+          %ins.t.l
+            %ins
+          %ins.t.r
+            %ins
+          %ins.c
+            %textarea#invTextArea(name="comment" cols="70" rows="10" style="display: none")
+            %iframe#commentEditor(style="height: 15px; width: 227px; overflow: hidden" scrolling="no" frameBorder="0")
+              %head
+                :plain
+                  <style type="text/css">body{ font-family:arial; font-size:5px;}*{border: none; outline-color: none}</style>
+              %body
+            :javascript
+              var textarea = document.getElementById('commentEditor'),
+                  invisible_textarea = document.getElementById('invTextArea');
+              textarea.contentWindow.addEventListener('keyup', function(event){
+                invisible_textarea.value = textarea.contentDocument.getElementsByTagName('body')[0].innerHTML;
+              }, true);
+          %ins.b.l
+            %ins
+          %ins.b.r
+            %ins  
 
     .social-bottom
-      
 
 - content_for :sidebar do
   = render 'sidebar/video'

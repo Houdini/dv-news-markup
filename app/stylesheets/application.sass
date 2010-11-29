@@ -269,6 +269,15 @@ body
 
     .single_news
       padding-top: 5px
+      blockquote
+        border-left: 2px solid #70a822
+        font-family: Georgia
+        font-weight: bold
+        font-style: italic
+        font-size: 11px
+        color: $gray
+        padding-left: 10px
+        margin-top: 13px
       a.arrow
         color: #7fade0
         font-size: 13px
@@ -324,7 +333,7 @@ body
         border-bottom: 1px solid #d7d7d7
         display:block
         widht: 100%
-        padding-top: 23px
+        padding-top: 15px
 
 
   #sidebar
@@ -818,3 +827,139 @@ $border_spacing = 10px
         display: block
         width: auto
         position: relative
+
+$textarea_size = 242px
+.leave-comment
+  margin-top: 3px
+  form
+    .left-part
+      display: none
+      position: absolute
+      font-size: 11px
+      color: $gray
+      font-family: Verdana
+      margin-top: 10px
+      table
+        border-collapse: separate
+        border-spacing: 4px
+        width: 190px
+        margin-top: 4px
+        margin-left: 2px
+        input
+          margin: 0
+      p
+        padding-left: 9px
+        margin-bottom: 3px
+        margin-top: 10px
+      .input-wrapper
+        background: url('/images/input.png') 0 0 no-repeat
+        width: 173px
+        height: 19px
+        input
+          width: 150px
+          border: none
+          background: transparent
+          border: none
+          outline-color: white
+          font-size: 12px
+          padding-left: 9px
+
+
+    .right-part
+      display: none
+      position: absolute
+      margin-left: 465px
+      margin-top: 65px
+      .comment-button
+        input
+          background: url('/images/submit_button.png') 0 1px no-repeat
+          width: 106px
+          height: 19px
+          border: none
+          outline-color: white
+          font-family: Arial
+          font-size: 11px
+      .captcha
+        font-size: 11px
+        color: $gray
+        font-family: Verdana
+        table
+          width: 200px
+          *
+            vertical-align: top
+          input
+            width: 135px
+    .textarea
+      width: $textarea_size
+      margin-left: 200px
+      display: block
+      position: relative
+      z-index: 1
+      min-height: 13px
+      height: 5px
+      .c
+        position: relative
+        z-index: 2
+        display: block
+        margin: 0 0 -10px 0
+        /* Отступы от границ кнопки. Нижний больше на 2px, которые занимает тень.
+        padding: 4px 
+      .t
+        position: absolute
+        z-index: 1
+        top: 0
+        //top: auto;
+        bottom: 0
+        left: 0
+        right: 9px
+        overflow: hidden
+        //width: 100%;
+        //height: 100%;
+      .b
+        position: absolute
+        z-index: 1
+        top: 0
+        //top: auto;
+        bottom: 0
+        left: 0
+        right: 10px
+        overflow: hidden
+        //width: 100%;
+        //height: 100%;
+        top: auto
+        bottom: -9px
+        height: 9px
+      .r
+        left: auto
+        //left: -11px;
+        right: 1px
+        //margin-left: 100%;
+        width: 9px
+      .t *, .b *
+        position: absolute
+        top: 0
+        left: 0
+        /* Общие ширина и высота изображения. Можно указать с запасом.
+        width: 300px
+        height: 320px
+        background: url('/images/borders.png') 0 0 no-repeat
+        /* IE 7 уже умеет показывать png, поэтому используем хак, который он не понимает.
+        -background-image: none
+        -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/iamges/borders.png,sizingMethod=crop)
+      .t *
+        margin-top: -9px
+      .l *
+        //width: 100%;
+        margin-left: -9px
+      textarea
+        width: $textarea_size - 15px
+        height: 5px
+        border: none
+        outline-color: white
+        font-size: 12px
+        font-family: Verdana, sans-serif
+      iframe
+        background: transparent
+        cursor: text
+        border: none
+        outline-color: white
