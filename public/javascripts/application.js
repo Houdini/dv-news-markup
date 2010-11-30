@@ -118,6 +118,28 @@ $(function(){
         }
     });
     //document.getElementById('commentEditor').contentWindow.document.style.cursor = "text";
+
+    var comments = $('#comments');
+    if (comments.length !== 0)
+    {
+      var hidden_comments = comments.children(),
+          first_three = comments.find(':nth-child(1), :nth-child(2), :nth-child(3)'),
+          comments_bottom = $('.last-comments .comments-bottom');
+      hidden_comments.hide();
+      first_three.show();
+      if (hidden_comments.size() > 3)
+      {
+        var show_all_comments = $('<a id="show_all_comments">Посмотреть все комментарии (' + hidden_comments.size() + ')</a>');
+        show_all_comments.click(function(event){
+            hidden_comments.show();
+            show_all_comments.hide();
+            comments_bottom.css('padding-bottom', '10px');
+        });
+        comments_bottom.css('padding-bottom', '40px');
+        comments.append(show_all_comments);
+      }
+      comments.show();
+    }
 });
 
 function hideFormText() {

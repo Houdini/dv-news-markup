@@ -296,7 +296,6 @@ body
       h1
         font-weight: bold
         font-family: Georgia
-
       img
         margin-right: 8px
       p
@@ -313,6 +312,33 @@ body
         font-family: Verdana
         font-size: 11px
         margin-top: 10px
+      .close-links
+        margin-top: 20px
+        @include block_title(#70a822)
+        .title
+          span
+            margin-left: 0 
+        .link
+          border-bottom: 1px solid #d7d7d7
+          margin-top: 15px
+          padding-bottom: 5px
+          @include title($gray, 13px)
+          h2
+            font-weight: bold
+            font-family: Georgia
+          .time
+            font-family: Verdana
+            font-size: 9px
+            font-weight: bold
+            color: #a6a6a6
+            a
+              text-decoration: underline
+              color: $link
+          .lead
+            font-family: Verdana
+            padding-top: 5px
+            font-size: 11px
+            color: $gray
       .social
         border-top: 1px solid #d7d7d7
         margin-top: 6px
@@ -329,12 +355,43 @@ body
           color: #7fade0
           font-size: 9px
           padding-top: 3px
+
       .social-bottom
         border-bottom: 1px solid #d7d7d7
         display:block
         widht: 100%
         padding-top: 15px
 
+      .last-comments
+        padding-top: 15px
+        @include block_title(#70a822)
+        span
+          margin-left: 0
+        .comments-bottom
+          padding-bottom: 10px
+          border-bottom: 1px solid #d7d7d7
+        .comment
+          font-family: Verdana
+          margin-top: 15px
+          .time
+            font-size: 9px
+            color: $gray
+            margin: 0
+          .name
+            color: #0e5370
+            font-weight: bold
+            font-size: 11px
+          .message
+            padding-top: 3px
+            font-size: 11px
+            color: $gray
+        #show_all_comments
+          color: $link
+          text-decoration: underline
+          font-size: 9px
+          margin-top: 15px
+          cursor: pointer
+          position: absolute
 
   #sidebar
     width: $total_width - $sidebar_width 
