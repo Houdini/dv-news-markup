@@ -5,6 +5,8 @@ Dvnews::Application.routes.draw do
   resources :interviews, :only => :index
   resources :news, :only => :index
   resources :job, :only => :index
+  resources :ratings, :only => :index
+  resources :video, :only => :index
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
