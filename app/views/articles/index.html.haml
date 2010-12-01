@@ -125,21 +125,7 @@
         В мире выявлен новый вирус гриппа - H3N2, причем, по утверждению Геннадия Онищенко, это - мутация предыдущего «свиного» гриппа. В данный момент медики заняты изучением его морфологии.
       .hr
 
-  .pagination
-    %nobr
-      Страницы
-      %a(href="") предыдущая
-      %a(href="")
-        следующая
-    .pages
-      %a(href="") 1
-      %a(href="") 2
-      %a(href="") 3
-      %a(href="") 4
-      %a(href="") 5
-      %a(href="") 6
-      %a(href="") 7
-      %a(href="") 8
+  = render 'shared/pagination'
 
 - content_for :sidebar do
   = render 'sidebar/video'

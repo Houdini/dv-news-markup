@@ -220,6 +220,85 @@ body
           color: $gray
           object
             margin-top: 10px
+    .stories-list
+      margin: 0
+      .stories
+        margin: 0
+        .story
+          border-bottom: 1px solid #d7d7d7
+          padding-bottom: 9px
+          margin-top: 20px
+          .col1
+            width: 180px
+            a
+              img
+                background-color: #dbe8f6
+                padding: 3px
+                border: 1px solid #a6a6a6
+          .col2
+            padding-left: 10px
+            @include title(#0e5370, 14px) 
+            h2
+              font-family: Georgia
+              font-weight: bold
+              a
+                padding-bottom: 6px
+                border-bottom: 1px solid #d7d7d7
+            .stats
+              padding-top: 15px
+              font-size: 9px
+              color: #0e5370
+              padding-bottom: 19px
+              span
+                padding-left: 6px
+                color: $link
+                font-weight: bold
+                margin-right: 17px
+            @include block_title(#0e5370)
+            .title
+              font-size: 11px
+              font-style: normal
+              margin-bottom: 5px
+              span
+                margin-top: 1px
+              a
+                text-decoration: underline
+                color: $link
+              
+    .press
+      .date
+        background-color: #e6e6e6
+        margin-top: 22px
+        font-size: 13px
+        text-weight: bold
+        span
+          background-color: white
+          color: #a6a6a6
+          padding-right: 10px
+      @include block_title(#70a822)
+      .title
+        border-bottom: 1px solid #d7d7d7
+        margin-top: 27px
+        padding-bottom: 9px
+        font-family: Georgia
+        font-style: italic
+        span
+          margin-right: 5px
+      @include title($gray, 13px)
+      h2
+        padding-top: 13px
+        font-family: Georgia
+        font-weight: bold
+      .content
+        margin: 0
+        padding: 0
+        width: 100%
+        color: $gray
+        p:first-child
+          padding-top: 8px
+        p
+          padding-top: 20px
+          font-size: 11px
     .ratings
       padding-top: 10px
       @include block_title(#70a822)
