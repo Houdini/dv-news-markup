@@ -164,6 +164,11 @@ body
   #content
     width: $sidebar_width
     float: left
+    a.arrow
+      color: #7fade0
+      font-size: 13px
+      background: url(/images/back_arrow.png) 0 2px no-repeat
+      padding-left: 30px
     .white-background
       padding-left: $global_left_padding
       .element
@@ -299,6 +304,97 @@ body
         p
           padding-top: 20px
           font-size: 11px
+    .story-container
+      padding-left: 10px !important
+      .arrow
+        margin-left: 10px
+      .story
+        background-color: #eff6fc
+        padding-top: 37px
+        margin-top: 5px
+        padding-left: 10px
+        font-size: 11px
+        color: $gray
+        padding-right: 10px
+        .small-title
+          color: white
+          font-size: 13px
+          display: block
+          margin-top: -32px
+          margin-left: -10px
+          position: absolute
+          span
+            background: #0e5370
+            padding: 5px 10px 5px 10px
+        h1
+          color: #0e5370
+          font-family: Georgia
+          font-size: 18px
+          padding-bottom: 5px
+        .al_bottom1
+          padding-bottom: 20px
+          .al_bottom2
+            .col2
+              padding-left: 10px
+        .elements
+          .element
+            margin-top: 3px
+            border-top: 1px solid #d7d7d7
+            padding-top: 8px
+            padding-bottom: 5px
+            h2
+              font-family: Georgia
+              font-weight: bold
+        @include block_title(#0e5370)
+        .title
+          border-top: 1px solid #d7d7d7
+          padding-top: 20px
+          table
+            width: 100%
+            font-weight: bold
+            span
+              margin-right: 5px
+          .show_all_elements
+            float: right
+            font-size: 9px
+            color: #4e4e4e
+            text-align: right
+            a
+              color: #77a8df
+              text-decoration: underline
+        .elements
+          clear: both
+          .element
+            clear: both
+            .block
+              display: inline
+              width: 49%
+              float: left
+              clear: left
+              padding-bottom: none
+              .al_bottom1
+                border: none
+                padding-bottom: 9px
+                .al_bottom2
+                  padding-left: 5px
+                  .col1
+                    img
+                      margin-right: 0px
+                  img
+                    border: 1px solid #a6a6a6
+                    padding: 4px
+                    background-color: white
+                    display: inline
+            @include title(#0e5370, 14px)
+            .time
+              color: #9ea2a5
+              padding-bottom: 12px
+            .lead
+              color: #4e4e4e
+              font-size: 11px
+            .right
+              float: right
+              clear: right
     .ratings
       padding-top: 10px
       @include block_title(#70a822)
@@ -397,11 +493,6 @@ body
         color: $gray
         padding-left: 10px
         margin-top: 13px
-      a.arrow
-        color: #7fade0
-        font-size: 13px
-        background: url(/images/back_arrow.png) 0 2px no-repeat
-        padding-left: 30px
       .al_bottom1
         margin-top: 10px
       @include title($gray, 13px)
