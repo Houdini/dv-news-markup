@@ -161,6 +161,8 @@ body
   overflow: hidden
   background-color: #fff
   padding-bottom: 10px
+  .full-width-content
+    width: 100% !important
   #content
     width: $sidebar_width
     float: left
@@ -200,6 +202,65 @@ body
           clear: both
           padding-top: 10px
           border-bottom: 1px solid #d7d7d7
+    .single-page
+      font-family: Verdana
+      @include block_title(#70a822)
+      .title
+        padding-bottom: 9px
+        border-bottom: 1px solid #d7d7d7
+        margin-bottom: 12px
+        padding-top: 13px
+      h1, h2, h3
+        color: $gray
+        padding-bottom: 9px
+        font-weight: bold
+        font-size: 11px
+      p
+        font-size: 11px
+        color: $gray
+        padding-top: 20px
+        padding-bottom: 34px
+      ul
+        font-size: 11px
+        color: $gray
+        margin-left: 17px
+        padding-bottom: 40px
+        li
+          color: #70a822
+          margin-bottom: 5px
+          span
+            color: $gray
+      .bigger-margin
+        margin-top: 10px
+        padding-bottom: 30px
+        li
+          margin-bottom: 20px
+      table
+        margin-bottom: 60px
+        tr
+          td
+            .al_bottom1
+              .al_bottom2
+                .col1
+                  img
+                    border: 1px solid #a6a6a6
+                    padding: 3px
+                .col2
+                  padding-left: 8px
+                  padding-right: 35px
+                  h1
+                    font-family: Georgia
+                    font-size: 13px
+                    font-weight: bold
+                    color: #010000
+                    padding-bottom: 4px
+                  p
+                    padding-top: 4px
+                    padding-bottom: 4px
+                    border-bottom: 1px solid #d7d7d7
+                  a
+                    color: #7fade0
+                    font-size: 11px
     .blogs
       .element
         h2
@@ -269,7 +330,7 @@ body
               a
                 text-decoration: underline
                 color: $link
-              
+
     .press
       .date
         background-color: #e6e6e6
