@@ -2,6 +2,7 @@
 $total_width: 1004px
 $sidebar_width: 735px
 $global_left_padding: 20px
+$text_size: 12px
 
 $gray: #4e4e4e
 $link: #7fade0
@@ -41,6 +42,43 @@ $link: #7fade0
     color: $color
     @include a_inherit
 
+@mixin text_styles
+  blockquote
+    border-left: 2px solid #70a822
+    font-family: Georgia
+    font-weight: bold
+    font-style: italic
+    font-size: $text_size
+    color: $gray
+    padding-left: 10px
+    margin-top: 13px
+  p
+    font-size: $text_size
+    color: $gray
+    font-family: Verdana, serif
+    margin-top: 13px
+    a
+      color: #7fade0
+  .author
+    text-align: right
+    color: #0e5370
+    font-weight: bold
+    font-family: Verdana
+    font-size: $text_size
+    margin-top: 10px
+
+@mixin side_bar_title
+  font-family: Georgia
+  font-style: italic
+  font-weight: bold
+  font-size: 12.6px
+  color: #5e6465
+  padding-left: 11px
+  margin-top: 10px
+  padding-bottom: 5px
+
+
+
 html, body
   height: 100%
   background-color: #fdfdfd
@@ -74,7 +112,7 @@ body
       .date
         text-align: right
         padding-top: 35px
-        padding-right: 100px
+        padding-right: 40px
         font-family: Georgia, serif
         font-size: 14px
       .search
@@ -171,10 +209,24 @@ body
       font-size: 13px
       background: url(/images/back_arrow.png) 0 2px no-repeat
       padding-left: 30px
+    .news-list
+      .element
+        .time
+          padding-bottom: 5px !important
+      .lead
+        font-weight: bold
+        p
+          font-weight: bold
+          padding-bottom: 10px
+        .hr
+          padding-top: 0px !important
     .white-background
       padding-left: $global_left_padding
       .element
         margin-top: $global_left_padding
+        .lead
+          p
+            font-weight: bold
         .time
           font-family: Verdana, sans
           font-size: 9px
@@ -192,8 +244,9 @@ body
         h2
           font-family: Georgia
           margin-bottom: 4px
+          font-weight: bold
         p
-          font-size: 11px
+          font-size: $text_size
           font-family: Verdata, sans
           color: $gray
         .hr
@@ -202,6 +255,118 @@ body
           clear: both
           padding-top: 10px
           border-bottom: 1px solid #d7d7d7
+      .wiki
+        padding: 10px 10px 40px 0
+        .toc-wrapper  
+          float: right
+          background-color: #f4f4f4
+          padding: 5px
+          border: 1px solid #dfdfdf
+          margin-left: 10px
+          h6
+            font-size: 12px
+            font-weight: bold
+            padding-bottom: 10px
+            text-align: center
+          ul
+            margin: 0 
+            padding: 0 
+            list-style: none
+            li
+              a
+                color: #4e4e4e
+              ul
+                margin: 0 
+                padding: 0px 
+                padding-bottom: 5px
+                padding-left: 5px
+                padding-top: 5px
+        table
+          margin-top: 10px
+          border-bottom: 1px solid #d7d7d7
+          padding-bottom: 4px
+          margin-bottom: 0
+          margin-bottom: 10px
+          width: 100%
+          td, th
+            vertical-align: top
+            
+            img
+            h2
+              padding-left: 25px
+            ul
+              background-color: #f4f4f4
+              padding-left: 20px
+              border-top: 1px solid #dfdfdf
+              padding-bottom: 10px
+              padding-top: 4px
+              li
+                margin-bottom: 8px
+                a
+                  color: $gray
+        h1
+          font-size: 16px
+          color: #5a5a5a
+          background: url('/images/green-dot.png') 0 3px no-repeat
+          padding-left: 10px
+          font-style: italic
+          font-family: Georgia
+          font-weight: bold
+          border-bottom: 1px solid #d7d7d7
+          margin-top: 10px
+        h2
+          padding-left: 10px
+          font-style: italic
+          font-family: Georgia
+          font-weight: bold
+          font-size: 13px
+        h1, h3
+          clear: both
+        h2
+          clear: left
+        h1, h2, h3, h4
+          a
+            color: inherit
+            text-decoration: inherit
+            font-size: inherit
+          a:hover
+            text-decoration: underline
+        h3
+          font-size: 13px
+          font-family: Georgia
+          font-weight: bold
+          padding-top: 10px
+          color: #528c00
+          padding-top: 0
+        h3.name
+          clear: none
+          color: #4e4e4e
+        h4
+          font-size: 11px
+          font-family: Georgia
+          color: #4e4e4e
+          margin-bottom: 5px
+          span
+            border-bottom: 1px solid #d7d7d7
+            padding-bottom: 2px
+        hr
+          clear: left
+          margin-top: 15px
+          color: #d7d7d7
+          background-color: #d7d7d7
+          height: 1px
+          border: none
+        p
+          margin: 0px 0 7px 0
+          padding: 0
+          a
+            color: $link
+        img
+          float: left
+          border: 1px solid #a6a6a6
+          padding: 3px
+          margin-right: 10px
+          margin-bottom: 10px
     .single-page
       font-family: Verdana
       @include block_title(#70a822)
@@ -218,7 +383,7 @@ body
         font-weight: bold
         font-size: 11px
       p
-        font-size: 11px
+        font-size: $text_size
         color: $gray
         padding-top: 20px
         padding-bottom: 34px
@@ -283,8 +448,9 @@ body
           font-size: 14px
           color: #0e5370
         .lead
+          font-weight: bold
           font-family: Verdana
-          font-size: 11px
+          font-size: $text_size
           color: $gray
           object
             margin-top: 10px
@@ -309,9 +475,9 @@ body
             h2
               font-family: Georgia
               font-weight: bold
+              border-bottom: 1px solid #d7d7d7
               a
                 padding-bottom: 6px
-                border-bottom: 1px solid #d7d7d7
             .stats
               padding-top: 15px
               font-size: 9px
@@ -366,7 +532,7 @@ body
           padding-top: 8px
         p
           padding-top: 20px
-          font-size: 11px
+          font-size: $text_size
     .story-container
       padding-left: 10px !important
       .arrow
@@ -376,7 +542,7 @@ body
         padding-top: 37px
         margin-top: 5px
         padding-left: 10px
-        font-size: 11px
+        font-size: $text_size
         color: $gray
         padding-right: 10px
         .small-title
@@ -405,9 +571,16 @@ body
             border-top: 1px solid #d7d7d7
             padding-top: 8px
             padding-bottom: 5px
+            @include text_styles
             h2
               font-family: Georgia
               font-weight: bold
+            .lead
+              font-weight: bold
+              font-size: $text_size
+            .system_time
+              display: none
+              
         @include block_title(#0e5370)
         .title
           border-top: 1px solid #d7d7d7
@@ -417,7 +590,7 @@ body
             font-weight: bold
             span
               margin-right: 5px
-          .show_all_elements
+          .show_all_elements, .hide_all_elements
             float: right
             font-size: 9px
             color: #4e4e4e
@@ -453,11 +626,32 @@ body
               color: #9ea2a5
               padding-bottom: 12px
             .lead
+              font-weight: bold
               color: #4e4e4e
-              font-size: 11px
+              font-size: $text_size
             .right
               float: right
               clear: right
+    .apec
+      h1
+        color: #0e5370
+        font-size: 16px
+        font-family: Georgia
+        padding-bottom: 10px
+        padding-top: 10px
+      @include block_title(#70a822)
+      .title
+        margin-top: 10px
+        border-bottom: 1px solid #d7d7d7
+        padding-bottom: 4px
+        h2
+          margin-left: 10px
+          font-weight: bold
+      .element
+        .lead
+          font-weight: bold
+          h2
+            font-weight: bold
     .ratings
       padding-top: 10px
       @include block_title(#70a822)
@@ -474,9 +668,10 @@ body
           font-weight: bold
           font-size: 13px
         .lead
+          font-weight: bold
           width: 610px
           font-family: Verdana
-          font-size: 11px
+          font-size: $text_size
           color: $gray
           padding: 5px 0 8px 0
         img
@@ -494,7 +689,7 @@ body
         width: 230px
         background-color: #d7d7d7
         height: 1px
-        margin-left: 188px
+        margin-left: 178px
       h3
         color: $gray
         font-size: 13px
@@ -533,7 +728,7 @@ body
           margin-left: 20px
           list-style: none
           li
-            font-size: 11px
+            font-size: $text_size
             margin-bottom: 5px
             a
               display: inline
@@ -544,18 +739,63 @@ body
         hr
           margin-bottom: 15px
           margin-top: 9px
-
+    .interview
+      .al_bottom1
+        .al_bottom2
+          .col2
+            h1
+              color: #0e5370 !important 
+              padding-bottom: 4px
+            .gray-line
+              color: #d7d7d7
+              display: block
+              height: 1px
+              width: 230px
+            .quotation
+              padding-top: 10px
+              font-family: Georgia
+              font-size: 13px
+              font-style: italic
+            p.lead
+              font-weight: bold
+              margin-top: 10px
     .single_news
       padding-top: 5px
-      blockquote
-        border-left: 2px solid #70a822
-        font-family: Georgia
+      @include text_styles
+      .lead
         font-weight: bold
-        font-style: italic
-        font-size: 11px
-        color: $gray
-        padding-left: 10px
-        margin-top: 13px
+      .photo-link
+        h2
+          a
+            color: #0e5370
+        p
+          margin-top: 5px
+      .photo
+        margin-bottom: 20px
+        .time
+          color: 9px
+          font-weight: bold
+          color: #4e4e4e
+        h1
+          color: #0e5370
+          font-size: 14px
+          font-family: Georgia
+        .lead
+          font-weight: bold
+          font-size: $text_size
+          color: #4e4e4e
+          padding-top: 5px
+      .photo-link
+        border-bottom: 1px solid #d7d7d7
+        padding-bottom: 9px
+        img
+          float: left
+          border: 1px solid #a6a6a6
+          padding: 4px
+        .time
+        p
+          font-size: $text_size
+          color: #4e4e4e
       .al_bottom1
         margin-top: 10px
       @include title($gray, 13px)
@@ -571,20 +811,6 @@ body
         font-family: Georgia
       img
         margin-right: 8px
-      p
-        font-size: 11px
-        color: $gray
-        font-family: Verdana, serif
-        margin-top: 13px
-        a
-          color: #7fade0
-      .author
-        text-align: right
-        color: #0e5370
-        font-weight: bold
-        font-family: Verdana
-        font-size: 11px
-        margin-top: 10px
       .close-links
         margin-top: 20px
         @include block_title(#70a822)
@@ -610,17 +836,19 @@ body
           .lead
             font-family: Verdana
             padding-top: 5px
-            font-size: 11px
+            font-size: $text_size
             color: $gray
       .social
         border-top: 1px solid #d7d7d7
         margin-top: 6px
         span
           float: right
-          margin-left: 20px
+          margin-left: 10px
           vertical-align: middle
         .fb-share
           margin-top: 2px
+          .FBConnectButton_Text
+            margin-left: 17px
         .twitter
           margin-top: 1px
         a.comment
@@ -653,10 +881,10 @@ body
           .name
             color: #0e5370
             font-weight: bold
-            font-size: 11px
+            font-size: $text_size
           .message
             padding-top: 3px
-            font-size: 11px
+            font-size: $text_size
             color: $gray
         #show_all_comments
           color: $link
@@ -699,7 +927,7 @@ body
     top: 7px
     text-align: right
     color: #bebebe
-    right: $total_width - $sidebar_width
+    right: 23px
 
 .hot-news-container
   background-color: #e4e5e6
@@ -714,7 +942,7 @@ body
     .news-title
       font-size: 10px
       color: white
-      padding-top: 7px
+      padding-top: 9px
       padding-left: 5px
     h1
       color: #303030
@@ -820,6 +1048,7 @@ dl.top-news
             font-size: 16px
             font-family: Georgia, sans-serif
           .lead
+            font-weight: bold
             font-size: 10px
             font-family: Verdana
             color: #4e4e4e
@@ -853,14 +1082,7 @@ dl.top-news
 
   .block
     .title
-      font-family: Georgia
-      font-style: italic
-      font-weight: bold
-      font-size: 12.6px
-      color: #5e6465
-      padding-left: 11px
-      margin-top: 10px
-      padding-bottom: 5px
+      @include side_bar_title
       @include a_inherit
     .content
       background-color: #f4f4f4
@@ -894,6 +1116,9 @@ dl.top-news
           .price
             color: #65ab00
             background: url(/images/plus.gif) no-repeat scroll 100% 2px transparent
+    #brainity_news
+      font-size: 12px
+      margin-top: 20px
     .interview
       img
         margin-left: 5px
@@ -902,6 +1127,7 @@ dl.top-news
       p
         color: #4e4e4e
         font-size: 10px
+        font-size: $text_size
     .press-review
       ul
         list-style: none
@@ -1069,8 +1295,8 @@ $border_spacing = 10px
     padding-left: $global_left_padding
     padding-top: 20px
     .block
-      border-bottom: 1px solid #d7d7d7
-      padding-bottom: 20px
+      //border-bottom: 1px solid #d7d7d7
+      padding-bottom: 0px
       float: left
       display: inline
       width: 49%
@@ -1081,6 +1307,7 @@ $border_spacing = 10px
         li
           margin-bottom: 10px
           position: relative
+          clear: both
           @include title(#4e4e4e, 11px)
           h2
             margin-left: 40px
@@ -1102,6 +1329,7 @@ $border_spacing = 10px
             display: block
             float: left
             margin-right: 7px
+            margin-bottom: 7px
           .time
             font-size: 9px
             font-family: Verdana
@@ -1113,7 +1341,8 @@ $border_spacing = 10px
           h2
             font-weight: bold
           .lead
-            font-size: 11px
+            font-weight: bold
+            font-size: $text_size
             font-family: Verdana
             color: #4e4e4e
     .right
@@ -1129,6 +1358,14 @@ $border_spacing = 10px
     border-top: 1px solid #dfdfdf
     padding: 3px
     width: 100%
+    .one-story
+      display: inline
+      float: left
+      width: 33%
+      margin-bottom: 7px
+      a
+        width: 100%
+        float: left
     table
       width: 100%
     @include title(#4e4e4e, 11px)
@@ -1293,3 +1530,24 @@ $textarea_size = 242px
         cursor: text
         border: none
         outline-color: white
+
+#right-navigation
+  position: absolute
+  margin-top: -22px
+  margin-left: 25px
+  a
+    text-decoration: none
+    color: white
+  a:hover
+    color: #3d3e3e 
+.images
+  height: 400px
+  display: hidden
+
+.image-with-description
+  margin-right: 8px
+  margin-bottom: 10px
+  p
+    margin-top: 0px !important
+    font-size: 9px
+    color: #909090

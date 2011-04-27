@@ -11,7 +11,12 @@ Dvnews::Application.routes.draw do
   resources :press, :only => :index
   resources :story, :only => :index
   resources :about, :only => :index
-
+  resources :interview, :only => :index
+  resources :all_news, :only => :index
+  resources :wiki, :only => :index
+  resources :gg, :only => :index
+  resources :apec, :only => :index
+  match '/ajax/body/:url_title' => 'story#get_body'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

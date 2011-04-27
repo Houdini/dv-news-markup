@@ -1,0 +1,53 @@
+.white-background.single_news
+  .photo
+    .time
+      12 ноября 18:38
+    %h1
+      Студенческие беспорядки в Лондоне
+    .lead
+      20 тысяч студентов вышли в Лондоне на акцию протеста против повышения платы за обучение. Протестующие студенты и школьники забрались на памятник премьер-министру Уинстону Черчиллю напротив парламента и залили его краской. Были выбиты стекла в здании Верховного суда, на торговой улице Оксфорд-стрит разгромлены витрины. Несколько человек попытались прорваться в здание Казначейства, однако полиции удалось им помешать. На данный момент задержано 10 человек, пострадало 22 демонстранта и девять офицеров полиции, один полицейский госпитализирован с серьезными травмами шеи. Протестующие также попытались напасть на автомобиль, в котором находились наследник престола принц Чарльз и его супруга - герцогиня Корнуоллская Камилла
+  .images
+    - (1..12).to_a.each do |i|
+      %img{:src => "/images/g/img#{i}.jpg"}
+  .social
+    .close-links
+      .title
+        %span
+        %div
+          Другие фоторепортажи
+      .photo-link
+        .al_bottom1
+          .al_bottom2
+            .col1
+              %a(href="#")
+                %img(src="/images/img-link-1.jpg")
+            .col2
+              .time
+                12 ноября 18:38
+              %h2
+                %a(href="#")
+                  Moto GP - Valentino Rossi
+              %p
+                A compilation of the best moments from the superb fight for victory between Valentino Rossi and Casey Stoner at the Red Bull U.S. Grand Prix at Laguna Seca on 20th July 2008.
+
+      .photo-link
+        .al_bottom1
+          .al_bottom2
+            .col1
+              %a(href="#")
+                %img(src="/images/img-link-1.jpg")
+            .col2
+              .time
+                12 ноября 18:38
+              %h2
+                %a(href="#")
+                  Moto GP - Valentino Rossi
+              %p
+                A compilation of the best moments from the superb fight for victory between Valentino Rossi and Casey Stoner at the Red Bull U.S. Grand Prix at Laguna Seca on 20th July 2008.
+
+
+- content_for :sidebar do
+  = render 'sidebar/video'
+  = render 'sidebar/interview'
+  = render 'sidebar/photo'
+  = render 'sidebar/popular'
